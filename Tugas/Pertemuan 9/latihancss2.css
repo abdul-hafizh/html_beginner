@@ -1,0 +1,109 @@
+#wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	font-family:verdana;
+	padding:0 0 0 0;
+	width:1000px;
+	background-repeat:repeat;
+}
+#header {
+	height:100px;
+	border:1px solid black;
+	margin-bottom:2px;
+	color:#000;
+	background-image:url(ddf.jpg);
+	text-shadow: 3px 3px 5px red;
+}
+#mn {
+        background-color:#000;
+		height:30px;
+}
+
+#tbl {
+	border-collapse:collapse;
+}
+#tbl tr {
+	background-color:navy;
+	color:white;
+}
+#tbl tr td:hover {
+	background-color:blue;
+	color:#fff;
+}
+
+#gmbr {
+	background-image:url(8.jpg);
+        height=400px; 
+}
+
+#footer {
+	text-align:center;
+	color:#fff;
+	background-color:#000;
+	text-shadow: 3px 3px 5px red;
+}
+
+#center {
+	color:lime;
+	line-height: 1.5;
+	font-weight:bold;
+}
+#body {
+	background-image:url(bg.jpg);
+	background-attachment: fixed;
+}
+
+/*==============================================================*/
+
+#navbar {
+	margin: 0;
+	padding: 0;
+	height: 2em; 
+}
+
+#navbar li {
+	list-style: none;
+	float: left; 
+	border-right:1px;
+}
+
+#navbar li a {
+	display: block;
+	padding: 6px 8px;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: #fff;
+	text-decoration: none; 
+	text-shadow: 3px 3px 5px red;
+	font-weight:bold;
+}
+
+#navbar li ul {
+	display: none; 
+}
+
+#navbar li:hover a {
+	background-color:blue;	
+}
+
+#navbar li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; 
+}
+
+#navbar li:hover li {
+	float: none; 
+}
+
+#navbar li:hover li a {
+	background-color:#000;
+	border-bottom: 1px solid #8db3ff;
+	color:#fff; 
+}
+
+#navbar li li a:hover {
+	background-color: #8db3ff; 
+	border:1px solid red;
+}

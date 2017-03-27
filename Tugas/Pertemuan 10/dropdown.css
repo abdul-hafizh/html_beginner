@@ -1,0 +1,39 @@
+#navi ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#navi a {
+	display:block;
+	color:#fee;
+	background:#252;
+	width:9em;
+	padding:3px 12px 3px 8px;
+	text-decoration:0;
+	border-bottom:1px solid #fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#navi a:hover {
+	color:#181;
+	background:#dd0;
+}
+
+#navi li {
+	margin:0;
+}
+
+#navi li li a {
+	display:block;
+	color:#282;
+	background:#9c9;
+	width:9em;
+	padding:3px 3px 3px 17px;
+	text-decoration:none;
+	border-bottom:1px solid #fff
+}
+
+
+

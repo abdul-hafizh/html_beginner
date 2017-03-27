@@ -1,0 +1,111 @@
+<html>
+<head><title>Latihan JavaScript</title>
+</head>
+<body>
+<form action="link.html" method="post" id="data" onsubmit="return validasi()">
+<table border="10" >
+<tr>
+   <th colspan="2" align="center" bgcolor="white">
+   <font face="courier new" color="black">
+   Form Input Data Penduduk</font></th></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>No KTP</i></font></td>
+   <td bgcolor="silver"><input type="text" name="no" id="noKTP"></td></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>Nama</i></font></td>
+   <td bgcolor="silver"><input type="text" name="nama" id="nama"></td></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>Alamat</i></font></td>
+   <td bgcolor="silver"><textarea cols="30" rows="5" name="alamat" id="alamat">
+   </textarea></td></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>Jenis Kelamin</i></font></td>
+   <td bgcolor="silver"><input type="radio" name="jk" id="jenis_kelamin">Laki-laki <br/>
+   <input type="radio" name="jk">Perempuan</td></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>Agama</i></font></td>
+   <td bgcolor="silver"><select name="agama" id="agama">
+   <option value="1">Islam</option>
+   <option value="2">Kristen</option>
+   <option value="3">Hindu</option>
+   <option value="4">Budha</option>
+   <option value="5">Atheis</option>
+   </select></td></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>Pekerjaan</i></font></td>
+   <td bgcolor="silver">
+   <input type="checkbox" name="hobi" value="1" id="pekerjaan">Wiraswasta<br/>
+   <input type="checkbox" name="hobi" value="2" id="pekerjaan">Pendidik<br/>
+   <input type="checkbox" name="hobi" value="3" id="pekerjaan">Buruh<br/>
+   <input type="checkbox" name="hobi" value="4" id="pekerjaan">Pengusaha<br/>
+   <input type="checkbox" name="hobi" value="5" id="pekerjaan">Dagang<br/>
+   <input type="checkbox" name="hobi" value="6" id="pekerjaan">Lainnya
+   </td></tr>
+<tr>
+   <td bgcolor="silver">
+   <font face="courier new" color="blue" size="4">
+   <i>Foto</i></font></td>
+   <td bgcolor="silver"><input type="file" name="foto" id="foto"></td></tr>
+<tr>
+   <td colspan="2" align="center" bgcolor="silver">
+   <input type="submit" value="Simpan" onclick="validasi()" name="simpan" id="simpan">
+   <input type="reset" value="Batal"></td></tr>
+</table>
+</form>
+
+
+<script>
+<!--
+
+            function validasi(){
+	    confirm("Apakah Anda yakin?");
+                var noKTP = document.getElementById('noKTP');
+                var nama = document.getElementById('nama');
+                var alamat = document.getElementById('alamat');
+		var jenis_kelamin = document.getElementById('jenis_kelamin');
+ 		var agama = document.getElementById('agama');
+		var pekerjaan = document.getElementById('pekerjaan');
+		var foto = document.getElementById('foto');
+
+                if (harusDiisi(noKTP, "Isi data dengan lengkap")) {
+                if (harusDiisi(nama, "Isi data dengan lengkap")) {
+                if (harusDiisi(alamat, "Isi data dengan lengkap")) {
+                if (harusDiisi(jenis_kelamin, "Isi data dengan lengkap")) {
+                if (harusDiisi(agama, "Isi data dengan lengkap")) {
+                if (harusDiisi(pekerjaan, "Isi data dengan lengkap")) {
+                if (harusDiisi(foto, "Isi data dengan lengkap")) {
+
+                            return true;
+                            };
+                          };
+                        };
+		      };
+		    };
+		  };
+		};
+                return false;
+            }
+            function harusDiisi(att, msg) {
+                if (att.value.length == 0) {
+                    alert(msg);
+                    att.focus();
+                    return false;
+                }
+                return true;
+            }
+//-->
+</script>
+</body>
+</html>

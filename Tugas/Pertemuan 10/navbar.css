@@ -1,0 +1,46 @@
+#navbar {
+margin: 0;
+padding: 0;
+height: 1em; 
+}
+
+#navbar li {
+list-style: none;
+float: left; 
+border-right:1px;
+}
+
+#navbar li a {
+display: block;
+padding: 5px 8px;
+background-color: #5e8ce9;
+color: #fff;
+text-decoration: none; 
+}
+
+#navbar li ul {
+display: none; 
+border: 1px solid white;
+background-color: #69f;
+}
+
+#navbar li:hover ul {
+display: block;
+position: absolute;
+margin: 0;
+padding: 0; }
+
+#navbar li:hover li {
+float: none; 
+}
+
+#navbar li:hover li a {
+background-color: #acf;
+border-bottom: 1px solid #fff;
+color: #000; 
+}
+
+#navbar li li a:hover {
+background-color: #8db3ff; 
+border:1px solid black;
+}
